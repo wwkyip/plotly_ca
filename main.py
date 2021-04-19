@@ -4,6 +4,7 @@ Created on Mon Apr 19 14:56:36 2021
 @author: winnyyip
 """
 
+
 import pandas as pd
 import plotly_clab as pc
 
@@ -21,9 +22,8 @@ data2 = pd.DataFrame({'Quarter': ['2020-Q2','2020-Q3','2020-Q4','2021-Q1'],
 data3 = pd.read_excel('scores.xlsx')
 
 
-# bar plot
-bar_div  = pc.plot_bar_vertical(data, 'region', 'value', 'Engagement Score by Region')
-#bar_div2 = pc.plot_bar_horizontal(data, 'region', 'value', 'Engagement Score by Region')
+# horizontal bar plot
+bar_div  = pc.plot_bar_horizontal(data, 'region', 'value', 'Engagement Score by Region')
 
 
 # line plot

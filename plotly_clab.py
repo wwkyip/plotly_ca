@@ -1,11 +1,9 @@
 
 
-import numpy
-
-
 # plotly
 import plotly.graph_objs as go
 from plotly.offline import plot
+
 
 color_bar =  ['#F04C5D',  # coral
               '#45AD8F',  # seedling
@@ -16,7 +14,7 @@ color_bar =  ['#F04C5D',  # coral
               '#b0dfd2']  # just example here Michael please alter
 
 
-def plot_bar_vertical(table, cat_col, val_col, title):
+def plot_bar_horizontal(table, cat_col, val_col, title):
     
     ''' Bar plot '''
     
